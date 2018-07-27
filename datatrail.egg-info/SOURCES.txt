@@ -1,9 +1,0 @@
-README.md
-setup.py
-datatrail/__init__.py
-datatrail/logger.py
-datatrail/test.py
-datatrail.egg-info/PKG-INFO
-datatrail.egg-info/SOURCES.txt
-datatrail.egg-info/dependency_links.txt
-datatrail.egg-info/top_level.txt
