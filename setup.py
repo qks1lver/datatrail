@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="datatrail",
-    version="0.0.9",
+    version="0.0.10",
     author="Jiun Yang Yen",
     author_email="withinfinitelife@gmail.com",
     description="A data processing logger for data analysis",

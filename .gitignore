@@ -1,0 +1,9 @@
+dist/**
+
+build/**
+
+datatrail.egg-info/**
+
+.idea/**
+
+datatrail/__pycache__/**

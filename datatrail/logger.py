@@ -173,9 +173,9 @@ def make(p_file, overwrite=False):
             print(_header + 'File name already exists, use overwrite=True to replace. File at %s' % p_file)
             return(0)
         else:
-            _ = run(_make_file, p_file, overwrite=overwrite)
+            _ = run(_make_file, p_file, func_name='make', overwrite=overwrite)
     else:
-        _ = run(_make_file, p_file)
+        _ = run(_make_file, p_file, func_name='make')
 
     return(1)
 
@@ -226,9 +226,9 @@ def rename(p_src, p_dest, overwrite=False):
             print(_header + 'A file with this name already exists, use overwrite=True to replace. File at %s' % p_dest)
             return(0)
         else:
-            _ = run(_rename_file, p_src, p_dest, overwrite=overwrite)
+            _ = run(_rename_file, p_src, p_dest, func_name='rename', overwrite=overwrite)
     else:
-        _ = run(_rename_file, p_src, p_dest)
+        _ = run(_rename_file, p_src, p_dest, func_name='rename')
 
     return(1)
 
@@ -269,9 +269,9 @@ def copy(p_src, dest='.', overwrite=False):
         return(0)
 
     if overwrite:
-        _ = run(_copy_file, p_src, p_dest, overwrite=overwrite)
+        _ = run(_copy_file, p_src, p_dest, func_name='copy', overwrite=overwrite)
     else:
-        _ = run(_copy_file, p_src, p_dest)
+        _ = run(_copy_file, p_src, p_dest, func_name='copy')
 
     return(p_dest)
 
@@ -315,9 +315,9 @@ def move(p_src, dest, overwrite=False):
         return(0)
 
     if overwrite:
-        _ = run(_move_file, p_src, p_dest, overwrite=overwrite)
+        _ = run(_move_file, p_src, p_dest, func_name='move', overwrite=overwrite)
     else:
-        _ = run(_move_file, p_src, p_dest)
+        _ = run(_move_file, p_src, p_dest, func_name='move')
 
     return(p_dest)
 
